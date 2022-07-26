@@ -1,0 +1,25 @@
+.company__item:not(:last-child) {
+  margin-left: 30px;
+}
+
+.company__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  fill: var(--social-icon-color);
+  border: 1px solid var(--social-icon-color);
+  border-radius: 4px;
+
+  transition-property: fill border;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.company__link:hover,
+.company__link:focus {
+  fill: var(--accent-text-color);
+  border: 1px solid var(--accent-text-color);
+  color: var(--accent-text-color);
+}

@@ -1,0 +1,42 @@
+.person {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  max-width: 206px;
+  max-height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.person__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.person__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: inherit;
+  padding: 12px;
+  color: var(--social-icon-color);
+  fill: var(--social-icon-color);
+  background: rgba(255, 255, 255, 0.1);
+
+  transition-property: fill background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.person__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.person__link:hover,
+.person__link:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-text-color);
+}
