@@ -39,3 +39,19 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.current {
+  color: var(--accent-text-color);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

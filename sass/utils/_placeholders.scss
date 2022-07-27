@@ -1,0 +1,35 @@
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+%container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+%img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+%flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex-align {
+  display: flex;
+  align-items: center;
+}
+
+%adsolutely-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

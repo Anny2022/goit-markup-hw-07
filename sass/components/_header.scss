@@ -1,3 +1,12 @@
 .header {
   border-bottom: 1px solid var(--border-header-color);
 }
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0px 15px;
+}

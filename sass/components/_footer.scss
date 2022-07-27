@@ -1,0 +1,46 @@
+footer {
+  background-color: var(--hero-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__wrap {
+  display: flex;
+  align-items: baseline;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0px 15px;
+}
+
+.footer__cont {
+  margin-right: 86px;
+}
+
+.footer__address {
+  width: 231px;
+}
+
+.footer__text {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.footer__item {
+  margin-top: 9px;
+}
+
+.footer__text,
+.footer__link {
+  font-style: normal;
+  font-size: 14px;
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__list {
+  margin: 0 auto;
+  padding-left: 0;
+}
