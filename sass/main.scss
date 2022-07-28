@@ -2,7 +2,7 @@
 @import './utils/reset';
 // @import './utils/hidden';
 @import './utils/placeholders';
-@import './utils/mixins';
+// @import './utils/mixins';
 @import './utils/vars';
 
 @import './common/common';
@@ -12,42 +12,16 @@
 @import './components/navigation';
 @import './components/site-cont';
 @import './components/hero';
-@import './components/feature';
+@import './components/features';
 @import './components/work';
 @import './components/team';
 @import './components/social-networks';
 @import './components/company';
 @import './components/footer';
 @import './components/bacdrop';
+@import './components/hidden';
+@import './components/shadow';
 @import './components/footer';
-
-.current {
-  color: var(--accent-text-color);
-}
-.container {
-  max-width: 1200px;
-  width: 100%;
-  padding: 0px 15px;
-  margin: 0 auto;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  margin-top: 0;
-  margin-bottom: 50px;
-
-  color: var(--title-text-color);
-}
 
 /* Header */
 
@@ -61,57 +35,13 @@
 
 /* Feature */
 
-.feature__cardset,
-.team__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.feature__card,
-.team__item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
-  align-items: center;
-}
-
-.feature__card:nth-child(4n),
-.team__item:nth-child(4n) {
-  margin-right: 0;
-}
-
 /* WORK */
 
-.work__title {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-
-  color: var(--title-text-color);
-}
-
-.work__setbox {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 /* TEAM */
-
-.team__list {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 // Social-net
 
 /* Company */
-
-.company__list {
-  display: flex;
-  justify-content: space-between;
-}
 
 // .company__item {
 //   display: flex;

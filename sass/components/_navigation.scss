@@ -27,15 +27,11 @@
 
   transition: color 250ms var(--cubic-bezier);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--accent-text-color);
+    transition: color 250ms var(--cubic-bezier);
   }
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  color: var(--accent-text-color);
-  transition: color 250ms var(--cubic-bezier);
 }
 
 .nav__link--current {

@@ -44,9 +44,9 @@
   cursor: pointer;
 
   transition: background-color 250ms var(--cubic-bezier);
-}
 
-.hero__btn:hover,
-.hero__btn:focus {
-  background-color: var(--btn-hover-color);
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover-color);
+  }
 }
