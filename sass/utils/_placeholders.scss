@@ -27,9 +27,23 @@
   align-items: center;
 }
 
+%link {
+  font-weight: 500;
+  font-size: 14px;
+}
+
 %adsolutely-centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+%current {
+  color: var(--accent-text-color);
+}
+
+%is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }

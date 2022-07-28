@@ -15,12 +15,7 @@
   color: var(--accent-text-color);
 }
 
-.logo--footer,
-.footer__text {
+.logo__footer {
+  margin-bottom: 20px;
   color: var(--primary-bg-color);
-}
-
-.footer__logo {
-  max-width: 145px;
-  width: 100%;
 }

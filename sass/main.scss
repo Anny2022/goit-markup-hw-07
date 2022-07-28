@@ -1,9 +1,11 @@
 @import './utils/vars';
 @import './utils/reset';
-@import './utils/hidden';
+// @import './utils/hidden';
 @import './utils/placeholders';
 @import './utils/mixins';
 @import './utils/vars';
+
+@import './common/common';
 
 @import './components/header';
 @import './components/logo';
@@ -118,6 +120,15 @@
 // }
 
 /* FOOTER */
+
+.footer__text {
+  color: var(--primary-bg-color);
+}
+
+.footer__logo {
+  max-width: 145px;
+  width: 100%;
+}
 
 .cta {
   margin-right: auto;
