@@ -27,26 +27,15 @@
 }
 
 .hero__btn {
+  @extend %button;
   display: inline-block;
   min-width: 216px;
-  min-height: 50px;
   padding: 10px 32px;
-  border: 1px solid transparent;
-  border-radius: 4px;
+
   color: var(--primary-bg-color);
   background-color: var(--accent-text-color);
   font-family: inherit;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+
   align-items: center;
   text-align: center;
-  cursor: pointer;
-
-  transition: background-color 250ms var(--cubic-bezier);
-
-  &:hover,
-  &:focus {
-    background-color: var(--btn-hover-color);
-  }
 }

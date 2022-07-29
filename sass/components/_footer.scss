@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-color: var(--hero-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -7,10 +7,7 @@ footer {
 .footer__wrap {
   display: flex;
   align-items: baseline;
-  margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
-  padding: 0px 15px;
+  @extend %container;
 }
 
 .footer__cont {
@@ -26,21 +23,26 @@ footer {
   line-height: 1.5;
 }
 
+.footer__list {
+  margin: 0 auto;
+  padding-left: 0;
+}
+
 .footer__item {
   margin-top: 9px;
 }
 
-.footer__text,
-.footer__link {
-  font-style: normal;
-  font-size: 14px;
+.footer__text {
+  @extend %footer__text;
+  color: var(--primary-bg-color);
 }
 
 .footer__link {
+  @extend %footer__text;
   color: rgba(255, 255, 255, 0.6);
-}
 
-.footer__list {
-  margin: 0 auto;
-  padding-left: 0;
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
 }
