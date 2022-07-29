@@ -1,24 +1,10 @@
-// .form {
-//   //   display: flex;
-//   //   flex-direction: column;
-
-//   //   @extend %flex-centered;
-
-// //   width: 448px;
-//   //   text-align: left;
-// //   padding: 0;
-// }
-
-// .form__title {
-//   font-weight: 700;
-//   font-size: 20px;
-//   line-height: 1.15;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-
-//   color: var(--title-text-color);
-//   margin-bottom: 12px;
-// }
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  text-align: left;
+  padding: 0;
+}
 
 .form__group {
   width: 100%;
@@ -26,11 +12,11 @@
   line-height: 1.125;
 
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .form__label {
   display: block;
-
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -43,8 +29,6 @@
 
 .form__field {
   position: relative;
-  display: flex;
-  flex-direction: column;
   width: 100%;
 
   margin-bottom: 10px;
@@ -55,10 +39,6 @@
     cursor: pointer;
     fill: var(--accent-text-color);
   }
-
-  //   &:nth-child(4) {
-  //     margin-bottom: 20px;
-  //   }
 }
 
 .form__input {
@@ -80,26 +60,15 @@
     cursor: pointer;
     border: 1px solid var(--accent-text-color);
   }
-
-  //   &:nth-child(4) {
-  //     margin-bottom: 20px;
-  //   }
 }
 
 .checkbox {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+
   margin-top: 20px;
   margin-bottom: 30px;
 }
-
-// .form__input:focus-within,
-// .form__input:hover,
-// .form__input:focus {
-//   cursor: pointer;
-//   border: 1px solid var(--accent-text-color);
-// }
 
 .form_icon-input {
   position: absolute;
@@ -152,21 +121,6 @@
     letter-spacing: 0.01em;
   }
 }
-
-// .form__comment:focus-within,
-// .form__comment:hover,
-// .form__comment:focus {
-//   cursor: pointer;
-//   border: 1px solid var(--accent-text-color);
-// }
-
-// .form__comment::placeholder {
-//   color: rgba(117, 117, 117, 0.5);
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.01em;
-// }
 
 .form__agreement {
   position: relative;
@@ -232,25 +186,15 @@
   }
 }
 
-.form-btn {
-  //   @extend %flex-centered;
-  //   display: flex;
-  //   align-items: center;
+.form__btn {
   @extend %button;
   width: 200px;
-  //   height: 50px;
   padding: 0;
-  //   font-weight: 700;
-  //   font-size: 16px;
-  //   line-height: 1.88;
-  //   letter-spacing: 0.06em;
+  margin: 0 auto;
 
   text-align: center;
-  //   background: var(--accent-text-color);
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  //   color: var(--primary-bg-color);
-  //   border-radius: 4px;
-  //   border: none;
 
   &:hover,
   &:focus {
