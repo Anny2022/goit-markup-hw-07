@@ -50,8 +50,8 @@
       </div>
     </header>
     <main>
-      <section class="portfolio section">
-        <h1 class="visually-hidden" aria-hidden="true" tabindex="-1">Портфоліо</h1>
+      <section class="portfolio">
+        <h1 class="portfolio__title" aria-hidden="true" tabindex="-1">Портфоліо</h1>
         <nav class="nav">
           <ul class="filter">
             <li class="filter__item"><button class="filter__button" type="button">Все</button></li>
@@ -61,7 +61,7 @@
             <li class="filter__item"><button class="filter__button" type="button">Маркетинг</button></li>
           </ul>
         </nav>
-        <div class="container">
+        <div class="portfolio__wrap">
           <ul class="card-set">
             <li class="card-set__item">
               <a href="" class="card-set__link">
@@ -242,7 +242,7 @@
                   </div>
                 </article>
               </a>
-              <div class="productt">
+              <div class="product">
                 <h2 class="product__heading">Growing Business</h2>
                 <p class="product__text">Додаток</p>
               </div>
@@ -303,7 +303,7 @@
         </div>
         <div class="subscribe">
           <strong class="subscribe__title cta__title">Підпишіться на розсилку</strong>
-          <form class="footer-form">
+          <form class="subscribe__form">
             <label for="mail">
               <input
                 class="subscribe__input subscribe__input--focus"
@@ -314,7 +314,7 @@
                 required
               />
             </label>
-            <button class="footer-btn" type="submit">
+            <button class="footer-btn footer-btn--top" type="submit">
               Підписатися
               <svg class="footer-btn__icon">
                 <use href="./images/icons.svg/sprite2.svg#icon-icon-send"></use>
